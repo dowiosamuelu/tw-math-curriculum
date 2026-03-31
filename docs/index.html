@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣108數學課綱 | Taiwan Math Curriculum</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>台灣 108 數學課綱</h1>
+      <p class="subtitle">十二年國民基本教育數學領域課程綱要 — 結構化查詢</p>
+      <p class="header-links">
+        <a href="https://github.com/SammyLu/tw-math-curriculum" target="_blank" rel="noopener">GitHub</a>
+        <span class="sep">|</span>
+        <span class="version" id="data-version"></span>
+      </p>
+    </div>
+  </header>
+
+  <div class="disclaimer">
+    <div class="container">
+      本站資料由程式自動擷取自官方 PDF，可能存在錯誤，僅供參考，不代表官方立場。如發現問題請透過 <a href="https://github.com/SammyLu/tw-math-curriculum/issues/new?template=data_correction.md" target="_blank" rel="noopener">GitHub Issue</a> 回報。
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Data type tabs -->
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-type="content">學習內容 Learning Content</button>
+      <button class="tab" data-type="performance">學習表現 Learning Performance</button>
+      <button class="tab" data-type="competency">核心素養 Core Competency</button>
+    </nav>
+
+    <!-- Filters -->
+    <section class="filters" id="filters">
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="stage-select">學習階段 Stage</label>
+          <select id="stage-select">
+            <option value="">全部</option>
+            <option value="1">第一階段（國小 1-2）</option>
+            <option value="2">第二階段（國小 3-4）</option>
+            <option value="3">第三階段（國小 5-6）</option>
+            <option value="4">第四階段（國中 7-9）</option>
+            <option value="5">第五階段（高中 10-12）</option>
+          </select>
+        </div>
+        <div class="filter-group" id="grade-filter-group">
+          <label for="grade-select">年級 Grade</label>
+          <select id="grade-select">
+            <option value="">全部</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="search-input">搜尋 Search</label>
+          <input type="text" id="search-input" placeholder="編碼、標題或關鍵字...">
+        </div>
+        <button class="btn-clear" id="btn-clear">清除篩選</button>
+      </div>
+      <div class="filter-row domain-chips" id="domain-chips">
+        <!-- Domain chips rendered by JS -->
+      </div>
+    </section>
+
+    <!-- Results -->
+    <div class="results-header">
+      <span id="results-count"></span>
+    </div>
+    <section class="results" id="results">
+      <!-- Cards rendered by JS -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        資料來源：教育部《十二年國民基本教育課程綱要—數學領域》
+        <span class="sep">|</span>
+        課綱內容依著作權法第9條不受著作權保護
+        <span class="sep">|</span>
+        程式碼以 <a href="https://github.com/SammyLu/tw-math-curriculum/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a> 授權
+      </p>
+      <p>
+        <a href="https://github.com/SammyLu/tw-math-curriculum/issues/new?template=data_correction.md" target="_blank" rel="noopener">回報資料錯誤</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
