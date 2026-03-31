@@ -4,7 +4,7 @@ Taiwan's 12-Year Basic Education Math Curriculum (108 課綱) as structured, mac
 
 台灣十二年國民基本教育數學領域課程綱要，結構化 JSON 格式。
 
-**[Live Browser / 線上瀏覽 →](#)** *(coming soon)*
+**[Live Browser / 線上瀏覽 →](https://dowiosamuelu.github.io/tw-math-curriculum)** *(coming soon)*
 
 ## Why / 為什麼做這個
 
@@ -18,12 +18,12 @@ The official curriculum is published only as an 83-page PDF. This project extrac
 
 ## Data Overview / 資料概覽
 
-| Category | Count |
-|----------|-------|
-| Learning Content (學習內容) | 288 items |
+| Category                        | Count     |
+| ------------------------------- | --------- |
+| Learning Content (學習內容)     | 288 items |
 | Learning Performance (學習表現) | 262 items |
-| Grades (年級) | 1-12 |
-| Domains (主題) | 7 |
+| Grades (年級)                   | 1-12      |
+| Domains (主題)                  | 7         |
 
 **Domains**: N 數與量 / S 空間與形狀 / G 坐標幾何 / R 關係 / A 代數 / F 函數 / D 資料與不確定性
 
