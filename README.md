@@ -27,6 +27,12 @@ The official curriculum is published only as an 83-page PDF. This project extrac
 
 **Domains**: N 數與量 / S 空間與形狀 / G 坐標幾何 / R 關係 / A 代數 / F 函數 / D 資料與不確定性
 
+### Direct Download / 直接下載 JSON
+
+- [learning_content.json](docs/data/learning_content.json) — 學習內容 (288 items)
+- [learning_performance.json](docs/data/learning_performance.json) — 學習表現 (262 items)
+- [core_competencies.json](docs/data/core_competencies.json) — 核心素養 (27 items)
+
 ## Schema / 資料格式
 
 Each JSON file is wrapped in a versioned envelope:

@@ -238,7 +238,7 @@
         </div>`
       : "";
 
-    const issueUrl = `https://github.com/SammyLu/tw-math-curriculum/issues/new?template=data_correction.md&title=${encodeURIComponent("[Data] " + item.code)}`;
+    const issueUrl = `https://github.com/dowiosamuelu/tw-math-curriculum/issues/new?template=data_correction.md&title=${encodeURIComponent("[Data] " + item.code)}`;
 
     return `
       <div class="card" data-domain="${item.domain}">
@@ -271,7 +271,7 @@
       : "";
 
     const stageLabels = { 1: "I", 2: "II", 3: "III", 4: "IV", 5: "V" };
-    const issueUrl = `https://github.com/SammyLu/tw-math-curriculum/issues/new?template=data_correction.md&title=${encodeURIComponent("[Data] " + item.code)}`;
+    const issueUrl = `https://github.com/dowiosamuelu/tw-math-curriculum/issues/new?template=data_correction.md&title=${encodeURIComponent("[Data] " + item.code)}`;
 
     return `
       <div class="card" data-domain="${item.domain}">
@@ -291,7 +291,7 @@
   function renderCompetencyCard(item) {
     const aspectColors = { A: "var(--domain-N)", B: "var(--domain-S)", C: "var(--domain-A)" };
     const levelLabels = { E: "國小", J: "國中", "S-U": "高中" };
-    const issueUrl = `https://github.com/SammyLu/tw-math-curriculum/issues/new?template=data_correction.md&title=${encodeURIComponent("[Data] " + item.code)}`;
+    const issueUrl = `https://github.com/dowiosamuelu/tw-math-curriculum/issues/new?template=data_correction.md&title=${encodeURIComponent("[Data] " + item.code)}`;
 
     return `
       <div class="card" style="border-left-color: ${aspectColors[item.aspect] || "var(--color-border)"}">
