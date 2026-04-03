@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>概念圖譜 | 台灣108數學課綱</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-bg: #f8f9fa;
+      --color-surface: #ffffff;
+      --color-text: #1a1a2e;
+      --color-text-secondary: #555;
+      --color-border: #e0e0e0;
+      --color-primary: #2563eb;
+      --color-primary-light: #dbeafe;
+      --radius: 8px;
+      --domain-N: #e74c3c;
+      --domain-S: #3498db;
+      --domain-G: #9b59b6;
+      --domain-R: #e67e22;
+      --domain-A: #2ecc71;
+      --domain-F: #1abc9c;
+      --domain-D: #f39c12;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      background: var(--color-text);
+      color: #fff;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      position: relative;
+    }
+    .header h1 { font-size: 1.1rem; font-weight: 700; }
+    .header-left { display: flex; align-items: center; gap: 12px; }
+    .header a { color: #93c5fd; text-decoration: none; font-size: 0.85rem; }
+
+    /* Controls */
+    .controls {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 8px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      z-index: 10;
+      position: relative;
+    }
+    .control-group { display: flex; flex-direction: column; gap: 2px; }
+    .controls label {
+      font-size: 0.7rem; font-weight: 600;
+      color: var(--color-text-secondary);
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .controls input[type="text"] {
+      padding: 5px 10px; border: 1px solid var(--color-border);
+      border-radius: 6px; font-size: 0.85rem; width: 180px;
+    }
+    .controls input:focus { outline: none; border-color: var(--color-primary); }
+    .hint { font-size: 0.75rem; color: var(--color-text-secondary); }
+
+    /* Graph */
+    #graph-container {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 90px);
+      overflow: hidden;
+      background: var(--color-bg);
+    }
+    svg { width: 100%; height: 100%; }
+
+    /* Grid labels */
+    .grade-label {
+      font-size: 11px; font-weight: 700;
+      fill: var(--color-text-secondary);
+      text-anchor: middle;
+    }
+    .domain-label {
+      font-size: 11px; font-weight: 700;
+      text-anchor: end;
+    }
+    .grid-line { stroke: var(--color-border); stroke-width: 0.5; stroke-dasharray: 2,4; }
+
+    /* Nodes */
+    .node { cursor: pointer; }
+    .node circle { stroke: #fff; stroke-width: 1.5; transition: opacity 0.2s; }
+    .node text {
+      font-size: 8px;
+      font-family: "SF Mono", "Fira Code", monospace;
+      fill: var(--color-text);
+      pointer-events: none;
+    }
+    .node.dimmed circle { opacity: 0.12; }
+    .node.dimmed text { opacity: 0.12; }
+    .node.highlighted circle { stroke: #000; stroke-width: 2.5; }
+
+    /* Edges */
+    .edge { fill: none; pointer-events: none; }
+    .edge-same_topic { stroke: var(--domain-G); stroke-width: 2; }
+    .edge-reference { stroke: #bbb; stroke-width: 1; stroke-dasharray: 4,3; }
+    .edge-reference-marker { fill: #bbb; }
+
+    /* Tooltip */
+    .tooltip {
+      position: absolute; pointer-events: none;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-size: 0.82rem; max-width: 300px;
+      z-index: 100; display: none; line-height: 1.5;
+    }
+    .tooltip-code { font-family: "SF Mono", monospace; font-weight: 700; font-size: 0.9rem; }
+    .tooltip-title { font-weight: 600; margin-top: 2px; }
+    .tooltip-meta { color: var(--color-text-secondary); font-size: 0.75rem; margin-top: 3px; }
+
+    /* Info panel */
+    .info-panel {
+      position: absolute; top: 10px; right: 10px;
+      width: 300px; background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      padding: 14px; z-index: 20;
+      display: none;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto; font-size: 0.82rem;
+    }
+    .info-panel h3 { font-family: "SF Mono", monospace; font-size: 1rem; margin-bottom: 2px; }
+    .info-title { font-weight: 600; font-size: 0.92rem; }
+    .info-meta { color: var(--color-text-secondary); font-size: 0.75rem; margin: 4px 0; }
+    .info-section { margin-top: 8px; }
+    .info-section-title {
+      font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+      color: var(--color-text-secondary); letter-spacing: 0.5px; margin-bottom: 3px;
+    }
+    .info-link {
+      display: inline-block; padding: 2px 7px; border-radius: 4px;
+      font-size: 0.75rem; font-family: "SF Mono", monospace;
+      background: var(--color-primary-light); color: var(--color-primary);
+      cursor: pointer; margin: 2px; text-decoration: none;
+    }
+    .info-link:hover { background: #bfdbfe; }
+    .info-close {
+      position: absolute; top: 6px; right: 8px;
+      background: none; border: none; cursor: pointer;
+      font-size: 1.1rem; color: var(--color-text-secondary);
+    }
+
+    /* Legend */
+    .legend {
+      position: absolute; bottom: 10px; left: 10px;
+      background: rgba(255,255,255,0.95);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 8px 12px; font-size: 0.72rem; z-index: 20;
+    }
+    .legend-title { font-weight: 600; margin-bottom: 4px; }
+    .legend-item { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+
+    @media (max-width: 640px) {
+      .info-panel { width: calc(100% - 20px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <a href="../">&larr; 課綱瀏覽</a>
+      <h1>概念圖譜 Concept Graph</h1>
+    </div>
+    <a href="https://github.com/dowiosamuelu/tw-math-curriculum" target="_blank">GitHub</a>
+  </header>
+
+  <div class="controls">
+    <div class="control-group">
+      <label>搜尋 Search</label>
+      <input type="text" id="search-input" placeholder="編碼或關鍵字...">
+    </div>
+    <span class="hint">點擊節點查看關聯 / Click a node to see connections</span>
+  </div>
+
+  <div id="graph-container">
+    <svg id="graph-svg">
+      <defs>
+        <marker id="arrow-ref" viewBox="0 -3 6 6" refX="6" refY="0"
+          markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0,-3L6,0L0,3" class="edge-reference-marker"/>
+        </marker>
+      </defs>
+    </svg>
+    <div class="tooltip" id="tooltip"></div>
+    <div class="info-panel" id="info-panel">
+      <button class="info-close" id="info-close">&times;</button>
+      <div id="info-content"></div>
+    </div>
+    <div class="legend">
+      <div class="legend-title">點擊節點後顯示的邊</div>
+      <div class="legend-item">
+        <svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="var(--domain-G)" stroke-width="2"/></svg>
+        同一主題 same topic
+      </div>
+      <div class="legend-item">
+        <svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#bbb" stroke-width="1" stroke-dasharray="4,3"/></svg>
+        交叉引用 reference
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (async function() {
+    const [graphData, contentData] = await Promise.all([
+      fetch('../data/concept_graph.json').then(r => r.json()),
+      fetch('../data/learning_content.json').then(r => r.json()),
+    ]);
+
+    const contentMap = {};
+    contentData.items.forEach(item => contentMap[item.code] = item);
+
+    const DOMAIN_ORDER = ['N', 'S', 'G', 'R', 'A', 'F', 'D'];
+    const DOMAIN_COLORS = {
+      N: '#e74c3c', S: '#3498db', G: '#9b59b6',
+      R: '#e67e22', A: '#2ecc71', F: '#1abc9c', D: '#f39c12'
+    };
+    const DOMAIN_NAMES = {
+      N: '數與量', S: '空間與形狀', G: '坐標幾何',
+      R: '關係', A: '代數', F: '函數', D: '資料與不確定性'
+    };
+    const EDGE_LABELS = { same_topic: '同一主題', reference: '交叉引用' };
+
+    // --- Layout: compute fixed grid positions ---
+    const container = document.getElementById('graph-container');
+    const W = container.clientWidth;
+    const H = container.clientHeight;
+
+    const MARGIN = { top: 40, right: 20, bottom: 20, left: 80 };
+    const GRADES = Array.from({ length: 12 }, (_, i) => i + 1);
+    const COL_W = (W - MARGIN.left - MARGIN.right) / GRADES.length;
+
+    // Group nodes by (grade, domain) to compute row offsets
+    const cells = {};  // "grade-domain" -> [nodes]
+    graphData.nodes.forEach(n => {
+      const key = `${n.grade}-${n.domain}`;
+      (cells[key] = cells[key] || []).push(n);
+    });
+
+    // Compute max items per domain across all grades for row height
+    const domainMaxCount = {};
+    DOMAIN_ORDER.forEach(d => {
+      let max = 0;
+      GRADES.forEach(g => {
+        const k = `${g}-${d}`;
+        max = Math.max(max, (cells[k] || []).length);
+      });
+      domainMaxCount[d] = max;
+    });
+
+    const NODE_R = 7;
+    const NODE_SPACING = NODE_R * 2 + 4;  // vertical spacing within cell
+    const DOMAIN_PAD = 8;  // padding between domain rows
+
+    // Compute Y start for each domain row
+    const domainY = {};
+    let yOffset = MARGIN.top;
+    DOMAIN_ORDER.forEach(d => {
+      domainY[d] = yOffset;
+      yOffset += domainMaxCount[d] * NODE_SPACING + DOMAIN_PAD;
+    });
+    const TOTAL_H = yOffset + MARGIN.bottom;
+
+    // Assign fixed (x, y) to each node
+    const nodeMap = {};
+    graphData.nodes.forEach(n => {
+      const key = `${n.grade}-${n.domain}`;
+      const siblings = cells[key];
+      const idx = siblings.indexOf(n);
+      n.fx = MARGIN.left + (n.grade - 0.5) * COL_W;
+      n.fy = domainY[n.domain] + idx * NODE_SPACING + NODE_SPACING / 2;
+      nodeMap[n.code] = n;
+    });
+
+    // --- SVG ---
+    const svg = d3.select('#graph-svg');
+    const zoom = d3.zoom()
+      .scaleExtent([0.3, 4])
+      .on('zoom', e => masterG.attr('transform', e.transform));
+    svg.call(zoom);
+
+    const masterG = svg.append('g');
+
+    // Grid lines and labels
+    const gridG = masterG.append('g').attr('class', 'grid');
+
+    // Grade columns
+    GRADES.forEach(g => {
+      const x = MARGIN.left + (g - 0.5) * COL_W;
+      gridG.append('text')
+        .attr('class', 'grade-label')
+        .attr('x', x).attr('y', MARGIN.top - 12)
+        .text(`${g}年級`);
+      gridG.append('line')
+        .attr('class', 'grid-line')
+        .attr('x1', MARGIN.left + (g - 1) * COL_W).attr('y1', MARGIN.top - 4)
+        .attr('x2', MARGIN.left + (g - 1) * COL_W).attr('y2', TOTAL_H);
+    });
+
+    // Domain row labels
+    DOMAIN_ORDER.forEach(d => {
+      const rowH = domainMaxCount[d] * NODE_SPACING;
+      const cy = domainY[d] + rowH / 2;
+      gridG.append('text')
+        .attr('class', 'domain-label')
+        .attr('x', MARGIN.left - 10).attr('y', cy + 4)
+        .attr('fill', DOMAIN_COLORS[d])
+        .text(`${d} ${DOMAIN_NAMES[d]}`);
+      // Row background
+      gridG.append('rect')
+        .attr('x', MARGIN.left - 4).attr('y', domainY[d] - 2)
+        .attr('width', W - MARGIN.left - MARGIN.right + 8)
+        .attr('height', rowH + 4)
+        .attr('fill', DOMAIN_COLORS[d]).attr('opacity', 0.03)
+        .attr('rx', 4);
+    });
+
+    // --- Edge layer (hidden by default, shown on click) ---
+    const edgeG = masterG.append('g').attr('class', 'edges');
+
+    // --- Node layer ---
+    const nodeG = masterG.append('g').attr('class', 'nodes');
+
+    const nodeEls = nodeG.selectAll('g.node')
+      .data(graphData.nodes, d => d.code)
+      .enter().append('g')
+      .attr('class', 'node')
+      .attr('transform', d => `translate(${d.fx},${d.fy})`);
+
+    nodeEls.append('circle')
+      .attr('r', NODE_R)
+      .attr('fill', d => DOMAIN_COLORS[d.domain]);
+
+    nodeEls.append('text')
+      .attr('dx', NODE_R + 3).attr('dy', 3)
+      .text(d => d.code);
+
+    // --- State ---
+    let selectedNode = null;
+    const tooltip = document.getElementById('tooltip');
+    const infoPanel = document.getElementById('info-panel');
+    const infoContent = document.getElementById('info-content');
+
+    // --- Helpers ---
+    function getEdgesFor(code) {
+      return graphData.edges.filter(e => e.source === code || e.target === code);
+    }
+
+    function getConnectedCodes(code) {
+      const set = new Set();
+      getEdgesFor(code).forEach(e => {
+        set.add(e.source);
+        set.add(e.target);
+      });
+      return set;
+    }
+
+    // Curved path between two nodes (arc for same-grade, straight otherwise)
+    function edgePath(e) {
+      const s = nodeMap[e.source], t = nodeMap[e.target];
+      if (!s || !t) return '';
+      const dx = t.fx - s.fx, dy = t.fy - s.fy;
+
+      if (Math.abs(dx) < 5) {
+        // Same grade column: use arc
+        const dist = Math.abs(dy);
+        const sweep = dy > 0 ? 1 : 0;
+        const rx = Math.min(dist * 0.6, COL_W * 0.4);
+        return `M${s.fx},${s.fy} A${rx},${dist / 2} 0 0,${sweep} ${t.fx},${t.fy}`;
+      }
+      // Different grades: quadratic bezier with slight curve
+      const mx = (s.fx + t.fx) / 2;
+      const my = (s.fy + t.fy) / 2 - Math.abs(dx) * 0.08;
+      return `M${s.fx},${s.fy} Q${mx},${my} ${t.fx},${t.fy}`;
+    }
+
+    // --- Draw edges for a selected node ---
+    function showEdges(code) {
+      edgeG.selectAll('*').remove();
+      const edges = getEdgesFor(code);
+
+      edges.forEach(e => {
+        const isSame = e.type === 'same_topic';
+        edgeG.append('path')
+          .attr('d', edgePath(e))
+          .attr('class', `edge edge-${e.type}`)
+          .attr('marker-end', isSame ? null : 'url(#arrow-ref)');
+      });
+    }
+
+    function hideEdges() {
+      edgeG.selectAll('*').remove();
+    }
+
+    // --- Highlight ---
+    function highlightNode(code) {
+      const connected = getConnectedCodes(code);
+      connected.add(code);
+      nodeEls
+        .classed('dimmed', d => !connected.has(d.code))
+        .classed('highlighted', d => d.code === code);
+    }
+
+    function resetHighlight() {
+      nodeEls.classed('dimmed', false).classed('highlighted', false);
+    }
+
+    // --- Click ---
+    function selectNode(d) {
+      if (selectedNode && selectedNode.code === d.code) {
+        deselectNode();
+        return;
+      }
+      selectedNode = d;
+      showEdges(d.code);
+      highlightNode(d.code);
+      showInfoPanel(d);
+    }
+
+    function deselectNode() {
+      selectedNode = null;
+      hideEdges();
+      resetHighlight();
+      infoPanel.style.display = 'none';
+    }
+
+    nodeEls.on('click', (e, d) => {
+      e.stopPropagation();
+      tooltip.style.display = 'none';
+      selectNode(d);
+    });
+
+    svg.on('click', () => deselectNode());
+    document.getElementById('info-close').addEventListener('click', deselectNode);
+
+    // --- Hover tooltip (only when nothing selected) ---
+    nodeEls.on('mouseenter', (e, d) => {
+      if (selectedNode) return;
+      let html = `<div class="tooltip-code" style="color:${DOMAIN_COLORS[d.domain]}">${d.code}</div>`;
+      html += `<div class="tooltip-title">${d.title}</div>`;
+      html += `<div class="tooltip-meta">${d.domain_name} / ${d.grade}年級</div>`;
+      const edges = getEdgesFor(d.code);
+      if (edges.length) {
+        html += `<div class="tooltip-meta">${edges.length} 條關聯</div>`;
+      }
+      tooltip.innerHTML = html;
+      tooltip.style.display = 'block';
+      positionTooltip(e);
+    });
+    nodeEls.on('mousemove', (e) => {
+      if (selectedNode) return;
+      positionTooltip(e);
+    });
+    nodeEls.on('mouseleave', () => { tooltip.style.display = 'none'; });
+
+    function positionTooltip(e) {
+      const rect = container.getBoundingClientRect();
+      let left = e.clientX - rect.left + 12;
+      let top = e.clientY - rect.top - 10;
+      if (left + 300 > rect.width) left = e.clientX - rect.left - 310;
+      if (top + 100 > rect.height) top = e.clientY - rect.top - 110;
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+    }
+
+    // --- Info panel ---
+    function showInfoPanel(d) {
+      const fullItem = contentMap[d.code];
+      const edges = getEdgesFor(d.code);
+
+      let html = `<h3 style="color:${DOMAIN_COLORS[d.domain]}">${d.code}</h3>`;
+      html += `<div class="info-title">${d.title}</div>`;
+      html += `<div class="info-meta">${d.domain_name} / ${d.grade}年級 / ${d.stage_name}</div>`;
+
+      if (fullItem?.description) {
+        html += `<div class="info-section">
+          <div class="info-section-title">說明</div>
+          <div>${fullItem.description}</div></div>`;
+      }
+      if (fullItem?.remarks) {
+        html += `<div class="info-section">
+          <div class="info-section-title">備註</div>
+          <div>${fullItem.remarks}</div></div>`;
+      }
+
+      if (edges.length) {
+        html += `<div class="info-section"><div class="info-section-title">關聯條目 (${edges.length})</div><div>`;
+        edges.forEach(e => {
+          const other = e.source === d.code ? e.target : e.source;
+          const title = contentMap[other]?.title || '';
+          const label = EDGE_LABELS[e.type] || e.type;
+          html += `<span class="info-link" data-code="${other}" title="${title}">${other}</span>`;
+          html += `<span style="font-size:0.68rem;color:var(--color-text-secondary);margin-right:4px">${label}</span>`;
+        });
+        html += '</div></div>';
+      }
+
+      if (fullItem?.related_performance?.length) {
+        html += `<div class="info-section"><div class="info-section-title">對應學習表現</div><div>`;
+        fullItem.related_performance.forEach(c => {
+          html += `<span class="info-link" style="background:#fef3c7;color:#92400e">${c}</span>`;
+        });
+        html += '</div></div>';
+      }
+
+      infoContent.innerHTML = html;
+      infoPanel.style.display = 'block';
+
+      infoContent.querySelectorAll('.info-link[data-code]').forEach(el => {
+        el.addEventListener('click', () => {
+          const node = graphData.nodes.find(n => n.code === el.dataset.code);
+          if (node) {
+            selectNode(node);
+            panToNode(node);
+          }
+        });
+      });
+    }
+
+    function panToNode(node) {
+      const t = d3.zoomTransform(svg.node());
+      svg.transition().duration(400).call(
+        zoom.transform,
+        d3.zoomIdentity
+          .translate(W / 2 - node.fx * t.k, H / 2 - node.fy * t.k)
+          .scale(t.k)
+      );
+    }
+
+    // --- Search ---
+    let searchTimeout;
+    document.getElementById('search-input').addEventListener('input', e => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        const term = e.target.value.toLowerCase().trim();
+        if (!term) {
+          if (!selectedNode) resetHighlight();
+          return;
+        }
+        // Highlight matches, dim rest
+        const matches = new Set();
+        graphData.nodes.forEach(n => {
+          if (n.code.toLowerCase().includes(term) || n.title.toLowerCase().includes(term)) {
+            matches.add(n.code);
+          }
+        });
+        nodeEls
+          .classed('dimmed', d => !matches.has(d.code))
+          .classed('highlighted', false);
+        hideEdges();
+        selectedNode = null;
+        infoPanel.style.display = 'none';
+
+        // Pan to first match
+        const first = graphData.nodes.find(n => matches.has(n.code));
+        if (first) panToNode(first);
+      }, 250);
+    });
+
+    // --- Initial fit ---
+    const initScale = Math.min(
+      W / (GRADES.length * COL_W + MARGIN.left + MARGIN.right),
+      H / TOTAL_H,
+      1
+    );
+    const initTx = (W - (MARGIN.left + GRADES.length * COL_W) * initScale) / 2;
+    const initTy = (H - TOTAL_H * initScale) / 2;
+    svg.call(zoom.transform,
+      d3.zoomIdentity.translate(initTx, initTy).scale(initScale)
+    );
+  })();
+  </script>
+</body>
+</html>

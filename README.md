@@ -4,7 +4,7 @@ Taiwan's 12-Year Basic Education Math Curriculum (108 課綱) as structured, mac
 
 台灣十二年國民基本教育數學領域課程綱要，結構化 JSON 格式。
 
-**[Live Browser / 線上瀏覽 →](https://dowiosamuelu.github.io/tw-math-curriculum)** *(coming soon)*
+**[Live Browser / 線上瀏覽 →](https://dowiosamuelu.github.io/tw-math-curriculum)** 
 
 ## Why / 為什麼做這個
 
@@ -32,6 +32,18 @@ The official curriculum is published only as an 83-page PDF. This project extrac
 - [learning_content.json](docs/data/learning_content.json) — 學習內容 (288 items)
 - [learning_performance.json](docs/data/learning_performance.json) — 學習表現 (262 items)
 - [core_competencies.json](docs/data/core_competencies.json) — 核心素養 (27 items)
+- [concept_graph.json](docs/data/concept_graph.json) — 概念先備知識圖譜 (288 nodes, 74 edges)
+
+### Concept Graph / 概念圖譜
+
+**[Interactive Graph / 互動圖譜 →](https://dowiosamuelu.github.io/tw-math-curriculum/graph/)**
+
+將 288 個學習內容條目建構為有向圖，呈現概念間的關係。所有邊皆來自課綱文字中的明確交叉引用，每條邊附有原文作為依據。
+
+| Type           | 中文     | Description                                                       |
+| -------------- | -------- | ----------------------------------------------------------------- |
+| `same_topic` | 同一主題 | 跨領域出現的相同主題（如 N-1-5 與 S-1-1 皆為「長度（同S-1-1）」） |
+| `reference`  | 交叉引用 | 課綱備註/說明中提及的其他條目，附原文供人工判讀語意               |
 
 ## Schema / 資料格式
 
@@ -102,6 +114,7 @@ for item in data["items"]:
 ```bash
 pip install pdfplumber
 python scripts/extract.py
+python scripts/build_graph.py   # generate concept graph
 ```
 
 ## Data Source & Copyright / 資料來源與版權

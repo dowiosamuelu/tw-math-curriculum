@@ -111,6 +111,43 @@ def split_title_description(text):
     return text, ""
 
 
+# Codes whose title lacks specificity — the first sentence of description
+# (before the first 。) is actually part of the bold title in the original PDF,
+# but pdfplumber cannot detect bold in this document (single font, uniform
+# stroke width).  We merge description's first sentence back into the title.
+TITLE_MERGE_CODES = {
+    "N-1-4", "N-2-3", "N-2-4", "N-2-5", "N-2-6", "N-2-8", "N-2-9",
+    "N-2-11", "N-2-14",
+    "N-3-6", "N-3-7", "N-3-8", "N-3-12", "N-3-14", "N-3-15", "N-3-16",
+    "N-3-17",
+    "N-4-3", "N-4-4", "N-4-9", "N-4-10", "N-4-11", "N-4-13",
+    "S-4-1", "S-4-2",
+    "N-5-2", "N-5-10", "N-5-11", "N-5-12", "N-5-13", "N-5-14", "N-5-15",
+    "N-5-16",
+    "N-6-5", "N-6-7", "N-6-8", "N-6-9", "S-6-2", "R-6-4", "D-6-2",
+}
+
+
+def fix_title_specificity(items):
+    """Merge first sentence of description into title for items that need it."""
+    for item in items:
+        if item["code"] not in TITLE_MERGE_CODES:
+            continue
+        desc = item.get("description", "")
+        if not desc:
+            continue
+        # Split on first 。
+        idx = desc.find("。")
+        if idx >= 0:
+            first_sentence = desc[:idx]
+            rest = desc[idx + 1:].strip()
+        else:
+            first_sentence = desc
+            rest = ""
+        item["title"] = item["title"] + "：" + first_sentence
+        item["description"] = rest
+
+
 def extract_learning_performance(pdf):
     """Extract learning performance (學習表現) from pages 12-20."""
     results = []
@@ -373,6 +410,10 @@ def main():
     # Extract learning content
     content = extract_learning_content(pdf)
     print(f"Learning content items extracted: {len(content)}")
+
+    # Fix titles that lack specificity (bold boundary not detectable in PDF)
+    fix_title_specificity(content)
+    print(f"Title specificity fixes applied: {len(TITLE_MERGE_CODES)} items")
 
     content_output = os.path.join(OUTPUT_DIR, "learning_content.json")
     with open(content_output, "w", encoding="utf-8") as f:

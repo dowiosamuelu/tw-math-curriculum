@@ -1,0 +1,3489 @@
+{
+  "version": "1.0.0",
+  "source": "十二年國民基本教育課程綱要—數學領域",
+  "source_url": "https://www.k12ea.gov.tw",
+  "data_type": "concept_graph",
+  "generated_at": "2026-04-03",
+  "description": "數學概念先備知識圖譜。節點為學習內容條目，邊為概念間的關係。",
+  "edge_types": {
+    "same_topic": "同一主題跨領域出現（如 N-1-5 與 S-1-1 皆為「長度」）",
+    "reference": "課綱文字中的交叉引用（附原文，語意待人工標註）"
+  },
+  "stats": {
+    "total_nodes": 288,
+    "total_edges": 74,
+    "edges_by_type": {
+      "reference": 70,
+      "same_topic": 4
+    },
+    "root_concepts_count": 227,
+    "terminal_concepts_count": 231
+  },
+  "nodes": [
+    {
+      "code": "N-1-1",
+      "title": "一百以內的數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-1-2",
+      "title": "加法和減法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 2
+    },
+    {
+      "code": "N-1-3",
+      "title": "基本加減法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 3
+    },
+    {
+      "code": "N-1-4",
+      "title": "解題：1元、5 元、10元、50元、100 元",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 4
+    },
+    {
+      "code": "N-1-5",
+      "title": "長度（同S-1-1）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 5
+    },
+    {
+      "code": "N-1-6",
+      "title": "日常時間用語",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 6
+    },
+    {
+      "code": "S-1-1",
+      "title": "長度（同N-1-5）",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "S-1-2",
+      "title": "形體的操作",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 2
+    },
+    {
+      "code": "R-1-1",
+      "title": "算式與符號",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "R-1-2",
+      "title": "兩數相加的順序不影響其和",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 2
+    },
+    {
+      "code": "D-1-1",
+      "title": "簡單分類",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 1,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-2-1",
+      "title": "一千以內的數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-2-2",
+      "title": "加減算式與直式計算",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 2
+    },
+    {
+      "code": "N-2-3",
+      "title": "解題：加減應用問題",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 3
+    },
+    {
+      "code": "N-2-4",
+      "title": "解題：簡單加減估算",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 4
+    },
+    {
+      "code": "N-2-5",
+      "title": "解題：100元、500 元、1000元",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 5
+    },
+    {
+      "code": "N-2-6",
+      "title": "乘法：乘法的意義與應用",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 6
+    },
+    {
+      "code": "N-2-7",
+      "title": "十十乘法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 7
+    },
+    {
+      "code": "N-2-8",
+      "title": "解題：兩步驟應用問題（加、減、乘）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 8
+    },
+    {
+      "code": "N-2-9",
+      "title": "解題：分裝與平分",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 9
+    },
+    {
+      "code": "N-2-10",
+      "title": "單位分數的認識",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 10
+    },
+    {
+      "code": "N-2-11",
+      "title": "長度：「公分」、「公尺」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 11
+    },
+    {
+      "code": "N-2-12",
+      "title": "容量、重量、面積",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 12
+    },
+    {
+      "code": "N-2-13",
+      "title": "鐘面的時刻",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 13
+    },
+    {
+      "code": "N-2-14",
+      "title": "時間：「年」、「月」、「星期」、「日」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 14
+    },
+    {
+      "code": "S-2-1",
+      "title": "物體之幾何特徵",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "S-2-2",
+      "title": "簡單幾何形體",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 2
+    },
+    {
+      "code": "S-2-3",
+      "title": "直尺操作",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 3
+    },
+    {
+      "code": "S-2-4",
+      "title": "平面圖形的邊長",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 4
+    },
+    {
+      "code": "S-2-5",
+      "title": "面積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 5
+    },
+    {
+      "code": "R-2-1",
+      "title": "大小關係與遞移律",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "R-2-2",
+      "title": "三數相加，順序改變不影響其和",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 2
+    },
+    {
+      "code": "R-2-3",
+      "title": "兩數相乘的順序不影響其積",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 3
+    },
+    {
+      "code": "R-2-4",
+      "title": "加法與減法的關係",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 4
+    },
+    {
+      "code": "D-2-1",
+      "title": "分類與呈現",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 2,
+      "stage": 1,
+      "stage_name": "第一學習階段（國小低年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-3-1",
+      "title": "一萬以內的數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-3-2",
+      "title": "加減直式計算",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 2
+    },
+    {
+      "code": "N-3-3",
+      "title": "乘以一位數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 3
+    },
+    {
+      "code": "N-3-4",
+      "title": "除法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 4
+    },
+    {
+      "code": "N-3-5",
+      "title": "除以一位數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 5
+    },
+    {
+      "code": "N-3-6",
+      "title": "解題：乘除應用問題",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 6
+    },
+    {
+      "code": "N-3-7",
+      "title": "解題：兩步驟應用問題（加減與除、連乘）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 7
+    },
+    {
+      "code": "N-3-8",
+      "title": "解題：四則估算",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 8
+    },
+    {
+      "code": "N-3-9",
+      "title": "簡單同分母分數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 9
+    },
+    {
+      "code": "N-3-10",
+      "title": "一位小數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 10
+    },
+    {
+      "code": "N-3-11",
+      "title": "整數數線",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 11
+    },
+    {
+      "code": "N-3-12",
+      "title": "長度：「毫米」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 12
+    },
+    {
+      "code": "N-3-13",
+      "title": "角與角度（同S-3-1）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 13
+    },
+    {
+      "code": "N-3-14",
+      "title": "面積：「平方公分」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 14
+    },
+    {
+      "code": "N-3-15",
+      "title": "容量：「公升」、「毫升」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 15
+    },
+    {
+      "code": "N-3-16",
+      "title": "重量：「公斤」、「公克」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 16
+    },
+    {
+      "code": "N-3-17",
+      "title": "時間：「日」、「時」、「分」、「秒」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 17
+    },
+    {
+      "code": "S-3-1",
+      "title": "角與角度（同N-3-13）",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "S-3-2",
+      "title": "正方形和長方形",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 2
+    },
+    {
+      "code": "S-3-3",
+      "title": "圓",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 3
+    },
+    {
+      "code": "S-3-4",
+      "title": "幾何形體之操作",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 4
+    },
+    {
+      "code": "R-3-1",
+      "title": "乘法與除法的關係",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "R-3-2",
+      "title": "數量模式與推理（I）",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 2
+    },
+    {
+      "code": "D-3-1",
+      "title": "一維表格與二維表格",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 3,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-4-1",
+      "title": "一億以內的數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-4-2",
+      "title": "較大位數之乘除計算",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 2
+    },
+    {
+      "code": "N-4-3",
+      "title": "解題：兩步驟應用問題（乘除，連除）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 3
+    },
+    {
+      "code": "N-4-4",
+      "title": "解題：對大數取概數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 4
+    },
+    {
+      "code": "N-4-5",
+      "title": "同分母分數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 5
+    },
+    {
+      "code": "N-4-6",
+      "title": "等值分數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 6
+    },
+    {
+      "code": "N-4-7",
+      "title": "二位小數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 7
+    },
+    {
+      "code": "N-4-8",
+      "title": "數線與分數、小數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 8
+    },
+    {
+      "code": "N-4-9",
+      "title": "長度：「公里」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 9
+    },
+    {
+      "code": "N-4-10",
+      "title": "角度：「度」（同 S-4-1）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 10
+    },
+    {
+      "code": "N-4-11",
+      "title": "面積：「平方公尺」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 11
+    },
+    {
+      "code": "N-4-12",
+      "title": "體積與「立方公分」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 12
+    },
+    {
+      "code": "N-4-13",
+      "title": "解題：日常生活的時間加減問題",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 13
+    },
+    {
+      "code": "S-4-1",
+      "title": "角度：「度」（同 N-4-10）",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "S-4-2",
+      "title": "解題：旋轉角",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 2
+    },
+    {
+      "code": "S-4-3",
+      "title": "正方形與長方形的面積與周長",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 3
+    },
+    {
+      "code": "S-4-4",
+      "title": "體積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 4
+    },
+    {
+      "code": "S-4-5",
+      "title": "垂直與平行",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 5
+    },
+    {
+      "code": "S-4-6",
+      "title": "平面圖形的全等",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 6
+    },
+    {
+      "code": "S-4-7",
+      "title": "三角形",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 7
+    },
+    {
+      "code": "S-4-8",
+      "title": "四邊形",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 8
+    },
+    {
+      "code": "R-4-1",
+      "title": "兩步驟問題併式",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "R-4-2",
+      "title": "四則計算規律（I）",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 2
+    },
+    {
+      "code": "R-4-3",
+      "title": "以文字表示數學公式",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 3
+    },
+    {
+      "code": "R-4-4",
+      "title": "數量模式與推理（II）",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 4
+    },
+    {
+      "code": "D-4-1",
+      "title": "報讀長條圖與折線圖以及製作長條圖",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 4,
+      "stage": 2,
+      "stage_name": "第二學習階段（國小中年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-5-1",
+      "title": "十進位的位值系統",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-5-2",
+      "title": "解題：多步驟應用問題",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 2
+    },
+    {
+      "code": "N-5-3",
+      "title": "公因數和公倍數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 3
+    },
+    {
+      "code": "N-5-4",
+      "title": "異分母分數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 4
+    },
+    {
+      "code": "N-5-5",
+      "title": "分數的乘法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 5
+    },
+    {
+      "code": "N-5-6",
+      "title": "整數相除之分數表示",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 6
+    },
+    {
+      "code": "N-5-7",
+      "title": "分數除以整數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 7
+    },
+    {
+      "code": "N-5-8",
+      "title": "小數的乘法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 8
+    },
+    {
+      "code": "N-5-9",
+      "title": "整數、小數除以整數（商為小數）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 9
+    },
+    {
+      "code": "N-5-10",
+      "title": "解題：比率與應用",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 10
+    },
+    {
+      "code": "N-5-11",
+      "title": "解題：對小數取概數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 11
+    },
+    {
+      "code": "N-5-12",
+      "title": "面積：「公畝」、「公頃」、「平方公里」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 12
+    },
+    {
+      "code": "N-5-13",
+      "title": "重量：「公噸」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 13
+    },
+    {
+      "code": "N-5-14",
+      "title": "體積：「立方公尺」",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 14
+    },
+    {
+      "code": "N-5-15",
+      "title": "解題：容積",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 15
+    },
+    {
+      "code": "N-5-16",
+      "title": "解題：時間的乘除問題",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 16
+    },
+    {
+      "code": "S-5-1",
+      "title": "三角形與四邊形的性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "S-5-2",
+      "title": "三角形與四邊形的面積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 2
+    },
+    {
+      "code": "S-5-3",
+      "title": "扇形",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 3
+    },
+    {
+      "code": "S-5-4",
+      "title": "線對稱",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 4
+    },
+    {
+      "code": "S-5-5",
+      "title": "正方體和長方體",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 5
+    },
+    {
+      "code": "S-5-6",
+      "title": "空間中面與面的關係",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 6
+    },
+    {
+      "code": "S-5-7",
+      "title": "球、柱體與錐體",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 7
+    },
+    {
+      "code": "R-5-1",
+      "title": "三步驟問題併式",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "R-5-2",
+      "title": "四則計算規律（II）",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 2
+    },
+    {
+      "code": "R-5-3",
+      "title": "以符號表示數學公式",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 3
+    },
+    {
+      "code": "D-5-1",
+      "title": "製作折線圖",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 5,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-6-1",
+      "title": "20 以內的質數和質因數分解",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "N-6-2",
+      "title": "最大公因數與最小公倍數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 2
+    },
+    {
+      "code": "N-6-3",
+      "title": "分數的除法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 3
+    },
+    {
+      "code": "N-6-4",
+      "title": "小數的除法",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 4
+    },
+    {
+      "code": "N-6-5",
+      "title": "解題：整數、分數、小數的四則應用問題",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 5
+    },
+    {
+      "code": "N-6-6",
+      "title": "比與比值",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 6
+    },
+    {
+      "code": "N-6-7",
+      "title": "解題：速度",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 7
+    },
+    {
+      "code": "N-6-8",
+      "title": "解題：基準量與比較量",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 8
+    },
+    {
+      "code": "N-6-9",
+      "title": "解題：由問題中的數量關係，列出恰當的算式解題（同R-6-4）",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 9
+    },
+    {
+      "code": "S-6-1",
+      "title": "放大與縮小",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "S-6-2",
+      "title": "解題：地圖比例尺",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 2
+    },
+    {
+      "code": "S-6-3",
+      "title": "圓周率、圓周長、圓面積、扇形面積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 3
+    },
+    {
+      "code": "S-6-4",
+      "title": "柱體體積與表面積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 4
+    },
+    {
+      "code": "R-6-1",
+      "title": "數的計算規律",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "R-6-2",
+      "title": "數量關係",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 2
+    },
+    {
+      "code": "R-6-3",
+      "title": "數量關係的表示",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 3
+    },
+    {
+      "code": "R-6-4",
+      "title": "解題：由問題中的數量關係，列出恰當的算式解題（同N-6-9）",
+      "domain": "R",
+      "domain_name": "關係",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 4
+    },
+    {
+      "code": "D-6-1",
+      "title": "圓形圖",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 1
+    },
+    {
+      "code": "D-6-2",
+      "title": "解題：可能性",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 6,
+      "stage": 3,
+      "stage_name": "第三學習階段（國小高年級）",
+      "sequence": 2
+    },
+    {
+      "code": "N-7-1",
+      "title": "100以內的質數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "N-7-2",
+      "title": "質因數分解的標準分解式",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "N-7-3",
+      "title": "負數與數的四則混合運算(含分數、小數)",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "N-7-4",
+      "title": "數的運算規律",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 4
+    },
+    {
+      "code": "N-7-5",
+      "title": "數線",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 5
+    },
+    {
+      "code": "N-7-6",
+      "title": "指數的意義",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 6
+    },
+    {
+      "code": "N-7-7",
+      "title": "指數律",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 7
+    },
+    {
+      "code": "N-7-8",
+      "title": "科學記號",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 8
+    },
+    {
+      "code": "N-7-9",
+      "title": "比與比例式",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 9
+    },
+    {
+      "code": "S-7-1",
+      "title": "簡單圖形與幾何符號",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "S-7-2",
+      "title": "三視圖",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "S-7-3",
+      "title": "垂直",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "S-7-4",
+      "title": "線對稱的性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 4
+    },
+    {
+      "code": "S-7-5",
+      "title": "線對稱的基本圖形",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 5
+    },
+    {
+      "code": "G-7-1",
+      "title": "平面直角坐標系",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "A-7-1",
+      "title": "代數符號",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "A-7-2",
+      "title": "一元一次方程式的意義",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "A-7-3",
+      "title": "一元一次方程式的解法與應用",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "A-7-4",
+      "title": "二元一次聯立方程式的意義",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 4
+    },
+    {
+      "code": "A-7-5",
+      "title": "二元一次聯立方程式的解法與應用",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 5
+    },
+    {
+      "code": "A-7-6",
+      "title": "二元一次聯立方程式的幾何意義",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 6
+    },
+    {
+      "code": "A-7-7",
+      "title": "一元一次不等式的意義",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 7
+    },
+    {
+      "code": "A-7-8",
+      "title": "一元一次不等式的解與應用",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 8
+    },
+    {
+      "code": "D-7-1",
+      "title": "統計圖表",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "D-7-2",
+      "title": "統計數據",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 7,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "N-8-1",
+      "title": "二次方根",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "N-8-2",
+      "title": "二次方根的近似值",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "N-8-3",
+      "title": "認識數列",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "N-8-4",
+      "title": "等差數列",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 4
+    },
+    {
+      "code": "N-8-5",
+      "title": "等差級數求和",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 5
+    },
+    {
+      "code": "N-8-6",
+      "title": "等比數列",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 6
+    },
+    {
+      "code": "S-8-1",
+      "title": "角",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "S-8-2",
+      "title": "凸多邊形的內角和",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "S-8-3",
+      "title": "平行",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "S-8-4",
+      "title": "全等圖形",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 4
+    },
+    {
+      "code": "S-8-5",
+      "title": "三角形的全等性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 5
+    },
+    {
+      "code": "S-8-6",
+      "title": "畢氏定理",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 6
+    },
+    {
+      "code": "S-8-7",
+      "title": "平面圖形的面積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 7
+    },
+    {
+      "code": "S-8-8",
+      "title": "三角形的基本性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 8
+    },
+    {
+      "code": "S-8-9",
+      "title": "平行四邊形的基本性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 9
+    },
+    {
+      "code": "S-8-10",
+      "title": "正方形、長方形、箏形的基本性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 10
+    },
+    {
+      "code": "S-8-11",
+      "title": "梯形的基本性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 11
+    },
+    {
+      "code": "S-8-12",
+      "title": "尺規作圖與幾何推理",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 12
+    },
+    {
+      "code": "G-8-1",
+      "title": "直角坐標系上兩點距離公式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "A-8-1",
+      "title": "二次式的乘法公式",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "A-8-2",
+      "title": "多項式的意義",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "A-8-3",
+      "title": "多項式的四則運算",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "A-8-4",
+      "title": "因式分解",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 4
+    },
+    {
+      "code": "A-8-5",
+      "title": "因式分解的方法",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 5
+    },
+    {
+      "code": "A-8-6",
+      "title": "一元二次方程式的意義",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 6
+    },
+    {
+      "code": "A-8-7",
+      "title": "一元二次方程式的解法與應用",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 7
+    },
+    {
+      "code": "F-8-1",
+      "title": "一次函數",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "F-8-2",
+      "title": "一次函數的圖形",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "D-8-1",
+      "title": "統計資料處理",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 8,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "N-9-1",
+      "title": "連比",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "S-9-1",
+      "title": "相似形",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "S-9-2",
+      "title": "三角形的相似性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "S-9-3",
+      "title": "平行線截比例線段",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "S-9-4",
+      "title": "相似直角三角形邊長比值的不變性",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 4
+    },
+    {
+      "code": "S-9-5",
+      "title": "圓弧長與扇形面積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 5
+    },
+    {
+      "code": "S-9-6",
+      "title": "圓的幾何性質",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 6
+    },
+    {
+      "code": "S-9-7",
+      "title": "點、直線與圓的關係",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 7
+    },
+    {
+      "code": "S-9-8",
+      "title": "三角形的外心",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 8
+    },
+    {
+      "code": "S-9-9",
+      "title": "三角形的內心",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 9
+    },
+    {
+      "code": "S-9-10",
+      "title": "三角形的重心",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 10
+    },
+    {
+      "code": "S-9-11",
+      "title": "證明的意義",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 11
+    },
+    {
+      "code": "S-9-12",
+      "title": "空間中的線與平面",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 12
+    },
+    {
+      "code": "S-9-13",
+      "title": "表面積與體積",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 13
+    },
+    {
+      "code": "F-9-1",
+      "title": "二次函數的意義",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "F-9-2",
+      "title": "二次函數的圖形與極值",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "D-9-1",
+      "title": "統計數據的分布",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 1
+    },
+    {
+      "code": "D-9-2",
+      "title": "認識機率",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 2
+    },
+    {
+      "code": "D-9-3",
+      "title": "古典機率",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 9,
+      "stage": 4,
+      "stage_name": "第四學習階段（國中）",
+      "sequence": 3
+    },
+    {
+      "code": "N-10-1",
+      "title": "實數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1
+    },
+    {
+      "code": "N-10-2",
+      "title": "絕對值",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2
+    },
+    {
+      "code": "N-10-3",
+      "title": "指數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3
+    },
+    {
+      "code": "N-10-4",
+      "title": "常用對數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4
+    },
+    {
+      "code": "N-10-5",
+      "title": "數值計算的誤差",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 5
+    },
+    {
+      "code": "N-10-6",
+      "title": "數列、級數與遞迴關係",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 6
+    },
+    {
+      "code": "N-10-7",
+      "title": "邏輯",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 7
+    },
+    {
+      "code": "G-10-1",
+      "title": "坐標圖形的對稱性",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1
+    },
+    {
+      "code": "G-10-2",
+      "title": "直線方程式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2
+    },
+    {
+      "code": "G-10-3",
+      "title": "圓方程式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3
+    },
+    {
+      "code": "G-10-4",
+      "title": "直線與圓",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4
+    },
+    {
+      "code": "G-10-5",
+      "title": "廣義角和極坐標",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 5
+    },
+    {
+      "code": "G-10-6",
+      "title": "三角比",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 6
+    },
+    {
+      "code": "G-10-7",
+      "title": "三角比的性質",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 7
+    },
+    {
+      "code": "A-10-1",
+      "title": "式的運算",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1
+    },
+    {
+      "code": "A-10-2",
+      "title": "多項式之除法原理",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2
+    },
+    {
+      "code": "F-10-1",
+      "title": "一次與二次函數",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1
+    },
+    {
+      "code": "F-10-2",
+      "title": "三次函數的圖形特徵",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2
+    },
+    {
+      "code": "F-10-3",
+      "title": "多項式不等式",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3
+    },
+    {
+      "code": "D-10-1",
+      "title": "集合",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1
+    },
+    {
+      "code": "D-10-2",
+      "title": "數據分析",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2
+    },
+    {
+      "code": "D-10-3",
+      "title": "有系統的計數",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3
+    },
+    {
+      "code": "D-10-4",
+      "title": "複合事件的古典機率",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 10,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4
+    },
+    {
+      "code": "N-11A-1",
+      "title": "弧度量",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "S-11A-1",
+      "title": "空間概念",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-1",
+      "title": "平面向量",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-2",
+      "title": "空間坐標系",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-3",
+      "title": "空間向量",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-4",
+      "title": "三角不等式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-5",
+      "title": "三角的和差角公式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 5,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-6",
+      "title": "平面向量的運算",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 6,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-7",
+      "title": "空間向量的運算",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 7,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-8",
+      "title": "三階行列式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 8,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-9",
+      "title": "平面方程式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 9,
+      "class_type": "A"
+    },
+    {
+      "code": "G-11A-10",
+      "title": "空間中的直線方程式",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 10,
+      "class_type": "A"
+    },
+    {
+      "code": "A-11A-1",
+      "title": "二元一次方程組的矩陣表達",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "A-11A-2",
+      "title": "三元一次聯立方程式",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "A"
+    },
+    {
+      "code": "A-11A-3",
+      "title": "矩陣的運算",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "A"
+    },
+    {
+      "code": "A-11A-4",
+      "title": "對數律",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4,
+      "class_type": "A"
+    },
+    {
+      "code": "F-11A-1",
+      "title": "三角函數的圖形",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "F-11A-2",
+      "title": "正餘弦的疊合",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "A"
+    },
+    {
+      "code": "F-11A-3",
+      "title": "矩陣的應用",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "A"
+    },
+    {
+      "code": "F-11A-4",
+      "title": "指數與對數函數",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4,
+      "class_type": "A"
+    },
+    {
+      "code": "D-11A-1",
+      "title": "主觀機率與客觀機率",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "D-11A-2",
+      "title": "條件機率",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "A"
+    },
+    {
+      "code": "D-11A-3",
+      "title": "貝氏定理",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "A"
+    },
+    {
+      "code": "N-11B-1",
+      "title": "弧度量",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "S-11B-1",
+      "title": "空間概念",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "S-11B-2",
+      "title": "圓錐曲線",
+      "domain": "S",
+      "domain_name": "空間與形狀",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    },
+    {
+      "code": "G-11B-1",
+      "title": "平面向量",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "G-11B-2",
+      "title": "平面向量的運算",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    },
+    {
+      "code": "G-11B-3",
+      "title": "平面上的比例",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "B"
+    },
+    {
+      "code": "G-11B-4",
+      "title": "空間坐標系",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4,
+      "class_type": "B"
+    },
+    {
+      "code": "A-11B-1",
+      "title": "矩陣與資料表格",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "F-11B-1",
+      "title": "週期性數學模型",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "F-11B-2",
+      "title": "按比例成長模型",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    },
+    {
+      "code": "D-11B-1",
+      "title": "主觀機率與客觀機率",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "D-11B-2",
+      "title": "不確定性",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 11,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    },
+    {
+      "code": "N-12甲-1",
+      "title": "數列的極限",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "N-12甲-2",
+      "title": "無窮等比級數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "A"
+    },
+    {
+      "code": "N-12甲-3",
+      "title": "複數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "A"
+    },
+    {
+      "code": "G-12甲-1",
+      "title": "二次曲線",
+      "domain": "G",
+      "domain_name": "坐標幾何",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "A-12甲-1",
+      "title": "複數與方程式",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "F-12甲-1",
+      "title": "函數",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "F-12甲-2",
+      "title": "函數的極限",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "A"
+    },
+    {
+      "code": "F-12甲-3",
+      "title": "微分",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "A"
+    },
+    {
+      "code": "F-12甲-4",
+      "title": "導函數",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4,
+      "class_type": "A"
+    },
+    {
+      "code": "F-12甲-5",
+      "title": "黎曼和",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 5,
+      "class_type": "A"
+    },
+    {
+      "code": "F-12甲-6",
+      "title": "積分",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 6,
+      "class_type": "A"
+    },
+    {
+      "code": "F-12甲-7",
+      "title": "積分的應用",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 7,
+      "class_type": "A"
+    },
+    {
+      "code": "D-12甲-1",
+      "title": "離散型隨機變數",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "A"
+    },
+    {
+      "code": "D-12甲-2",
+      "title": "二項分布與幾何分布",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "A"
+    },
+    {
+      "code": "N-12乙-1",
+      "title": "複數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "N-12乙-2",
+      "title": "無窮等比級數",
+      "domain": "N",
+      "domain_name": "數與量",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    },
+    {
+      "code": "A-12乙-1",
+      "title": "線性規劃",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "A-12乙-2",
+      "title": "方程式的虛根",
+      "domain": "A",
+      "domain_name": "代數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    },
+    {
+      "code": "F-12乙-1",
+      "title": "函數",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "F-12乙-2",
+      "title": "函數的極限",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    },
+    {
+      "code": "F-12乙-3",
+      "title": "微分",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 3,
+      "class_type": "B"
+    },
+    {
+      "code": "F-12乙-4",
+      "title": "導函數",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 4,
+      "class_type": "B"
+    },
+    {
+      "code": "F-12乙-5",
+      "title": "積分",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 5,
+      "class_type": "B"
+    },
+    {
+      "code": "F-12乙-6",
+      "title": "積分的應用",
+      "domain": "F",
+      "domain_name": "函數",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 6,
+      "class_type": "B"
+    },
+    {
+      "code": "D-12乙-1",
+      "title": "離散型隨機變數",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 1,
+      "class_type": "B"
+    },
+    {
+      "code": "D-12乙-2",
+      "title": "二項分布",
+      "domain": "D",
+      "domain_name": "資料與不確定性",
+      "grade": 12,
+      "stage": 5,
+      "stage_name": "第五學習階段（高中）",
+      "sequence": 2,
+      "class_type": "B"
+    }
+  ],
+  "edges": [
+    {
+      "source": "N-1-2",
+      "target": "N-2-3",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…不做加數、被加數、減數、被減數未知題型（N-2-3）。"
+    },
+    {
+      "source": "N-1-5",
+      "target": "S-1-1",
+      "type": "same_topic",
+      "field": "title",
+      "evidence": "長度（同S-1-1）",
+      "directed": false
+    },
+    {
+      "source": "N-1-5",
+      "target": "N-2-11",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…內容含直線與曲線。本條目教學無常用單位（N-2-11）。"
+    },
+    {
+      "source": "N-1-6",
+      "target": "N-2-13",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…之時間用語為原則，非時間單位結構之教學（N-2-13、N-2-14）。簡單日期指日曆之「幾月…"
+    },
+    {
+      "source": "N-1-6",
+      "target": "N-2-14",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…則，非時間單位結構之教學（N-2-13、N-2-14）。簡單日期指日曆之「幾月幾日」，不含曆…"
+    },
+    {
+      "source": "S-1-1",
+      "target": "N-1-5",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "同N-1-5備註。"
+    },
+    {
+      "source": "D-1-1",
+      "target": "D-3-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…說明圖表皆出自學生的創意，並非正式表格（D-3-1）與統計圖表的教學（D-4-1以後）。"
+    },
+    {
+      "source": "D-1-1",
+      "target": "D-4-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…正式表格（D-3-1）與統計圖表的教學（D-4-1以後）。"
+    },
+    {
+      "source": "N-2-3",
+      "target": "R-2-4",
+      "type": "reference",
+      "field": "description",
+      "evidence": "…被減數未知之應用解題。連結加與減的關係（R-2-4）。"
+    },
+    {
+      "source": "N-2-5",
+      "target": "N-2-4",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "本單元的進行可與估算連結（N-2-4）。"
+    },
+    {
+      "source": "N-2-6",
+      "target": "R-2-3",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…限步驟。最後能以行列模型理解乘法交換律（R-2-3）。"
+    },
+    {
+      "source": "N-2-7",
+      "target": "N-2-9",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…法表。本條目的學習可協助在除法情境（如 N-2-9）中察覺乘與除的關係。"
+    },
+    {
+      "source": "N-2-8",
+      "target": "N-3-7",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "連乘在三年級（N-3-7）。"
+    },
+    {
+      "source": "N-2-9",
+      "target": "N-3-4",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…非除法教學，不列除式，不用「除」的名稱（N-3-4）。限相當於整除的問題。教學應在「十十乘…"
+    },
+    {
+      "source": "N-2-10",
+      "target": "N-2-9",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…動與教學限連續量，不處理離散量，避免和 N-2-9混淆。摺紙限「摺半」操作：例如用長方形摺…"
+    },
+    {
+      "source": "N-2-11",
+      "target": "N-2-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "基於N-2-1的限制，單位換算時公尺數限個位數。長度的…"
+    },
+    {
+      "source": "N-2-11",
+      "target": "N-3-11",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…減問題必須包含和數線加減可以連結之題材（N-3-11）。"
+    },
+    {
+      "source": "N-2-12",
+      "target": "N-3-14",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…際體驗重量的量感。本條目教學無常用單位（N-3-14、N-3-15、N-3-16）。"
+    },
+    {
+      "source": "N-2-12",
+      "target": "N-3-15",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…感。本條目教學無常用單位（N-3-14、N-3-15、N-3-16）。"
+    },
+    {
+      "source": "N-2-12",
+      "target": "N-3-16",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…無常用單位（N-3-14、N-3-15、N-3-16）。"
+    },
+    {
+      "source": "S-2-2",
+      "target": "S-4-7",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…用之命名教學，但勿發展為嚴格定義之學習（S-4-7、S-4-8）。可配合資料分類與呈現之教…"
+    },
+    {
+      "source": "S-2-2",
+      "target": "S-4-8",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…，但勿發展為嚴格定義之學習（S-4-7、S-4-8）。可配合資料分類與呈現之教學（D-2-…"
+    },
+    {
+      "source": "S-2-2",
+      "target": "D-2-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…-4-8）。可配合資料分類與呈現之教學（D-2-1）。"
+    },
+    {
+      "source": "S-2-5",
+      "target": "N-2-12",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "本條目相當於 N-2-12 的部分。"
+    },
+    {
+      "source": "D-2-1",
+      "target": "D-1-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "非正式表格與統計圖表教學（見D-1-1備註）。可配合平面圖形與立體形體教學（S…"
+    },
+    {
+      "source": "D-2-1",
+      "target": "S-2-2",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…1備註）。可配合平面圖形與立體形體教學（S-2-2）。"
+    },
+    {
+      "source": "N-3-4",
+      "target": "N-2-9",
+      "type": "reference",
+      "field": "description",
+      "evidence": "除法的意義與應用。基於N-2-9之學習，透過幾個一數的解題方法，理解如何…"
+    },
+    {
+      "source": "N-3-6",
+      "target": "R-3-1",
+      "type": "reference",
+      "field": "description",
+      "evidence": "…被除數未知之應用解題。連結乘與除的關係（R-3-1）。"
+    },
+    {
+      "source": "N-3-7",
+      "target": "N-4-3",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "乘除混合、連除在四年級（N-4-3）。"
+    },
+    {
+      "source": "N-3-9",
+      "target": "N-4-5",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…與「假分數」的名詞，也不含帶分數的教學（N-4-5）。應區分真分數與假分數之教學（例如分開…"
+    },
+    {
+      "source": "N-3-11",
+      "target": "N-2-11",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "數線須從 0開始。運用長度加減法（N-2-11），理解在數線上做加、減的意義。"
+    },
+    {
+      "source": "N-3-12",
+      "target": "N-3-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "基於N-3-1的限制，單位換算時，公尺數限個位數。自3…"
+    },
+    {
+      "source": "N-3-13",
+      "target": "S-3-1",
+      "type": "same_topic",
+      "field": "title",
+      "evidence": "角與角度（同S-3-1）",
+      "directed": false
+    },
+    {
+      "source": "N-3-15",
+      "target": "N-3-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "基於N-3-1的限制，單位換算公升數限個位數。可使用複…"
+    },
+    {
+      "source": "N-3-16",
+      "target": "N-3-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "基於N-3-1的限制，單位換算公斤數限個位數。可使用複…"
+    },
+    {
+      "source": "N-3-17",
+      "target": "N-4-13",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…題以認識加減問題類型為原則（較深入者見 N-4-13），處理時刻或時間量等常見加減問題。本年…"
+    },
+    {
+      "source": "S-3-1",
+      "target": "N-3-13",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "同N-3-13 備註。"
+    },
+    {
+      "source": "R-3-2",
+      "target": "D-3-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…，此非本條目之學習目標。可結合表格教學（D-3-1）。"
+    },
+    {
+      "source": "D-3-1",
+      "target": "R-3-2",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…計性題材，也可應用於觀察數量模式的變化（R-3-2）。"
+    },
+    {
+      "source": "N-4-3",
+      "target": "R-4-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…注意題型的多元性。可和併式學習一起進行（R-4-1）。"
+    },
+    {
+      "source": "N-4-8",
+      "target": "N-4-6",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…）與分母不大於5的分數。以等值分數思維（N-4-6）協助學生認識整數、分數、小數為一體。因…"
+    },
+    {
+      "source": "N-4-10",
+      "target": "S-4-1",
+      "type": "same_topic",
+      "field": "title",
+      "evidence": "角度：「度」（同 S-4-1）",
+      "directed": false
+    },
+    {
+      "source": "N-4-11",
+      "target": "N-4-2",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "基於 N-4-2，本條目不做「平方公分」換到「平方公尺」…"
+    },
+    {
+      "source": "S-4-1",
+      "target": "N-4-10",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "同N-4-10 備註。"
+    },
+    {
+      "source": "S-4-4",
+      "target": "N-4-12",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "同N-4-12 備註。"
+    },
+    {
+      "source": "R-4-1",
+      "target": "N-2-8",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "限整數。2、3年級已學習之兩步驟問題（N-2-8、N-3-7），也應複習並進行併式學習。"
+    },
+    {
+      "source": "R-4-1",
+      "target": "N-3-7",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…、3年級已學習之兩步驟問題（N-2-8、N-3-7），也應複習並進行併式學習。"
+    },
+    {
+      "source": "R-4-3",
+      "target": "S-4-3",
+      "type": "reference",
+      "field": "description",
+      "evidence": "…式，並能應用公式。可併入其他教學活動（如S-4-3）。"
+    },
+    {
+      "source": "N-5-2",
+      "target": "R-5-2",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…律情境之三步驟問題，以和分配律教學連結（R-5-2）。"
+    },
+    {
+      "source": "N-5-3",
+      "target": "N-6-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "以概念認識為主，不用短除法（N-6-1、N-6-2）。"
+    },
+    {
+      "source": "N-5-3",
+      "target": "N-6-2",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "以概念認識為主，不用短除法（N-6-1、N-6-2）。"
+    },
+    {
+      "source": "N-5-6",
+      "target": "N-5-10",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…的合理性。包含除可和「比率」的課題結合（N-5-10）。"
+    },
+    {
+      "source": "N-5-7",
+      "target": "N-5-5",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "等分除教學可運用乘法分數倍之經驗（N-5-5）。包含除可和「比率」的課題結合（N-5…"
+    },
+    {
+      "source": "N-5-7",
+      "target": "N-5-10",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…5-5）。包含除可和「比率」的課題結合（N-5-10）。"
+    },
+    {
+      "source": "N-5-9",
+      "target": "N-5-11",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…不盡的循環現象，教師以概數處理這類問題（N-5-11），不處理「循環小數」的命名與課題。"
+    },
+    {
+      "source": "N-5-10",
+      "target": "N-6-8",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…%）的應用情境（大於 1 之延伸情境見 N-6-8）。"
+    },
+    {
+      "source": "S-5-2",
+      "target": "N-5-5",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…邊長與高，必須在分數和小數的乘法後教學（N-5-5、N-5-8）。"
+    },
+    {
+      "source": "S-5-2",
+      "target": "N-5-8",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…須在分數和小數的乘法後教學（N-5-5、N-5-8）。"
+    },
+    {
+      "source": "S-5-7",
+      "target": "S-9-13",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…錐只介紹三角錐、四角錐、五角錐、六角錐（S-9-13）。"
+    },
+    {
+      "source": "R-5-1",
+      "target": "N-6-9",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…習併式不表示此後所有解題教學都必須併式（N-6-9）。"
+    },
+    {
+      "source": "R-5-3",
+      "target": "R-4-3",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…中運用。本條目並非取代「文字表示公式」（R-4-3），後者較易理解之優點仍可保持。"
+    },
+    {
+      "source": "N-6-9",
+      "target": "R-6-4",
+      "type": "same_topic",
+      "field": "title",
+      "evidence": "…問題中的數量關係，列出恰當的算式解題（同R-6-4）",
+      "directed": false
+    },
+    {
+      "source": "N-6-9",
+      "target": "R-6-2",
+      "type": "reference",
+      "field": "description",
+      "evidence": "…問題、流水問題、和差問題、雞兔問題。連結R-6-2、R-6-3。"
+    },
+    {
+      "source": "N-6-9",
+      "target": "R-6-3",
+      "type": "reference",
+      "field": "description",
+      "evidence": "…題、和差問題、雞兔問題。連結R-6-2、R-6-3。"
+    },
+    {
+      "source": "S-6-3",
+      "target": "S-9-5",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…逆推或過多推理步驟的問題（屬於國中範圍，S-9-5）。"
+    },
+    {
+      "source": "R-6-3",
+      "target": "R-6-2",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…長夜長的關係可列成晝長+夜長=24。連結R-6-2。含部分運用符號的教學，連結國中「符號代…"
+    },
+    {
+      "source": "R-6-4",
+      "target": "R-6-2",
+      "type": "reference",
+      "field": "description",
+      "evidence": "…問題、流水問題、和差問題、雞兔問題。連結R-6-2、R-6-3。"
+    },
+    {
+      "source": "R-6-4",
+      "target": "R-6-3",
+      "type": "reference",
+      "field": "description",
+      "evidence": "…題、和差問題、雞兔問題。連結R-6-2、R-6-3。"
+    },
+    {
+      "source": "R-6-4",
+      "target": "N-6-9",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…雜解題旨在思考，不要求步驟的併式。其他見N-6-9備註。"
+    },
+    {
+      "source": "D-6-2",
+      "target": "D-9-3",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…數量的多寡來回答。本條目非古典機率教學（D-9-3）。"
+    },
+    {
+      "source": "S-9-12",
+      "target": "S-5-6",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "S-5-6 僅教授「面與面的平行與垂直」，並且以操…"
+    },
+    {
+      "source": "S-9-13",
+      "target": "S-6-4",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "S-6-4僅教授「直柱體的體積」，本條目除了複習並…"
+    },
+    {
+      "source": "F-9-2",
+      "target": "F-10-1",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "…及「二次函數的應用問題」為10年級課程（F-10-1），本條目的教學聚焦在其圖形的特性。"
+    },
+    {
+      "source": "D-9-1",
+      "target": "D-7-2",
+      "type": "reference",
+      "field": "remarks",
+      "evidence": "D-7-2 處理單一統計量（平均數、中位數、眾數）…"
+    }
+  ]
+}
